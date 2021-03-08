@@ -1,0 +1,21 @@
+ion-footer {
+  .language-changer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .input-group {
+      font-size: 13px;
+      margin: 0 15px;
+      label {
+        opacity: .3;
+        cursor: pointer;
+      }
+      input {
+        display: none;
+        &:checked + label {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

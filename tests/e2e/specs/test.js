@@ -1,8 +1,10 @@
 // https://docs.cypress.io/api/introduction/api.html
 
-describe('My First Test', () => {
-  it('Visits the app root url', () => {
-    cy.visit('/folder/Inbox')
-    cy.contains('#container', 'Inbox')
-  })
+describe('Login', () => {
+    it('Login user', () => {
+        cy.visit('/login')
+        cy.get('[name="email"]').type('omerkamcili@hotmail.com');
+        cy.get('[name="password"]').type('123123aA');
+        cy.get('ion-button').click();
+    })
 })
